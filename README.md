@@ -1,13 +1,13 @@
-# YouCanRecover — Landing Page (Proof of Concept)
+# [Company Name] — Landing Page (Proof of Concept)
 
-A warm, trustworthy, mobile-first landing page concept for **YouCanRecover**, a California
+A warm, trustworthy, mobile-first landing page concept for **[Company Name]**, a California
 marketing &amp; consulting service that connects individuals and families with trusted detox,
 PHP, IOP, and sober-living programs.
 
 > **Preview build.** Testimonials and statistics are illustrative samples. Crisis resources
 > shown (988, SAMHSA 1-800-662-HELP) are real and accurate.
 
-**YouCanRecover LLC** (New York State) · Owner: Jesse W · (213) 929-9003 · Jaywassnyla@gmail.com
+**[Company Name] LLC** ([State]) · Owner: [Owner Name] · (555) 123-4567 · hello@example.com
 
 ## Highlights
 
@@ -66,11 +66,12 @@ This POC is built to be cloned and re-skinned. When adapting it, search-and-repl
 
 - **Base URL** `https://williamparrish-michael.github.io/youcanrecover-poc` — in every page's
   `og:*`/`canonical` tags, plus `robots.txt`, `sitemap.xml`, and the form's `_next`.
-- **Recipient email** `Jaywassnyla@gmail.com` — in the form `action` and the legal pages.
-- **Phone** `(213) 929-9003` / `+12139299003` — hero, header, footer, legal pages, 404.
-- **Entity & governing law** `YouCanRecover LLC` / New York — footer and legal pages.
-- **Brand + copy** — logo mark, palette (CSS custom properties at the top of `styles.css`),
-  and section content in `index.html`.
+- **Recipient email** `hello@example.com` — in the form `action` and the legal pages.
+- **Phone** `(555) 123-4567` / `+15551234567` — hero, header, footer, legal pages, 404.
+- **Brand name** `[Company Name]` — page titles, logo (`[Company <strong>Name</strong>]`), OG/Twitter
+  tags, and body copy. Owner name placeholder is `[Owner Name]`.
+- **Entity & governing law** `[Company Name] LLC` / `[State]` — footer and legal pages.
+- **Brand look** — logo mark (inline SVG) and palette (CSS custom properties at the top of `styles.css`).
 - Regenerate `assets/img/og.jpg` (1200×630-ish) for the new brand.
 
 ## Tech
