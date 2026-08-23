@@ -27,6 +27,8 @@ p { margin:0 0 1rem; }
 a { color:var(--teal-700); text-decoration:none; }
 img { max-width:100%; }
 .wrap { width:100%; max-width:var(--maxw); margin:0 auto; padding:0 22px; }
+.skip-link { position:absolute; left:-9999px; top:0; z-index:1000; background:var(--teal-700); color:#fff; padding:.7rem 1.1rem; border-radius:0 0 8px 0; font-weight:600; }
+.skip-link:focus { left:0; outline:3px solid var(--amber); outline-offset:2px; }
 .eyebrow { text-transform:uppercase; letter-spacing:.14em; font-size:.76rem; font-weight:700; color:var(--teal-600); margin:0 0 .6rem; }
 .accent { color:var(--amber); }
 
