@@ -155,6 +155,7 @@ img { max-width:100%; }
 .field input, .field select, .field textarea { width:100%; padding:.75rem .85rem; border:1px solid var(--line); border-radius:var(--radius-sm);
   font:inherit; color:var(--ink); background:#fdfcfa; }
 .field input:focus, .field select:focus, .field textarea:focus { outline:2px solid var(--teal-600); outline-offset:1px; border-color:var(--teal-600); }
+.section-note { font-size:.85rem; color:var(--muted); margin:1.4rem 0 0; max-width:70ch; }
 .form-note { font-size:.82rem; color:var(--muted); margin:.9rem 0 0; }
 .form-note.ok { color:var(--teal-700); font-weight:600; }
 /* Honeypot: hidden from people, still submitted by naive bots */
@@ -190,6 +191,7 @@ img { max-width:100%; }
 .footer-brand .brand-text { color:#fff; font-size:1.3rem; }
 .footer-brand p { color:#94a3ad; margin:.6rem 0 0; max-width:34ch; }
 .footer-contact { font-size:.92rem; }
+.footer-address { font-style:normal; font-size:.86rem; color:#9fb0b8; margin:.5rem 0 0; }
 .footer-contact a { color:#c8d3da; font-weight:600; }
 .footer-contact a:hover { color:#fff; }
 .footer-links { display:flex; flex-direction:column; gap:.55rem; }
