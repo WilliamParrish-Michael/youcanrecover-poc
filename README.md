@@ -4,9 +4,10 @@ A warm, trustworthy, mobile-first landing page concept for **YouCanRecover**, a 
 marketing &amp; consulting service that connects individuals and families with trusted detox,
 PHP, IOP, and sober-living programs.
 
-> **This is a proof-of-concept / design demo.** Copy, testimonials, statistics, and contact
-> details are illustrative placeholders. Crisis resources shown (988, SAMHSA 1-800-662-HELP)
-> are real and accurate.
+> **Preview build.** Testimonials and statistics are illustrative samples. Crisis resources
+> shown (988, SAMHSA 1-800-662-HELP) are real and accurate.
+
+**YouCanRecover LLC** (New York State) · Owner: Jesse W · (213) 929-9003 · Jaywassnyla@gmail.com
 
 ## Highlights
 

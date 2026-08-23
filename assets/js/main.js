@@ -4,6 +4,10 @@
   'use strict';
   document.documentElement.classList.add('js');
 
+  // Current year in the footer
+  var yearEl = document.getElementById('year');
+  if (yearEl) { yearEl.textContent = String(new Date().getFullYear()); }
+
   // Mobile nav toggle
   var toggle = document.getElementById('navToggle');
   var nav = document.getElementById('nav');

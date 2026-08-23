@@ -161,6 +161,9 @@ img { max-width:100%; }
 .footer-inner { display:grid; grid-template-columns:1.4fr 1fr 1.2fr; gap:2rem; padding:2.6rem 22px 1.6rem; }
 .footer-brand .brand-text { color:#fff; font-size:1.3rem; }
 .footer-brand p { color:#94a3ad; margin:.6rem 0 0; max-width:34ch; }
+.footer-contact { font-size:.92rem; }
+.footer-contact a { color:#c8d3da; font-weight:600; }
+.footer-contact a:hover { color:#fff; }
 .footer-links { display:flex; flex-direction:column; gap:.55rem; }
 .footer-links a { color:#c8d3da; }
 .footer-links a:hover { color:#fff; }
