@@ -157,6 +157,30 @@ img { max-width:100%; }
 .form-note.ok { color:var(--teal-700); font-weight:600; }
 /* Honeypot: hidden from people, still submitted by naive bots */
 .cform-honey { position:absolute !important; left:-9999px !important; width:1px; height:1px; opacity:0; }
+/* Consent line under the form */
+.form-consent { font-size:.82rem; color:var(--ink-soft); margin:0 0 1rem; }
+.form-consent a { font-weight:600; }
+
+/* Legal / document pages (privacy, terms, accessibility, 404) */
+.doc { padding:clamp(2rem,5vw,3.4rem) 0 clamp(3rem,6vw,4.5rem); }
+.doc-wrap { max-width:800px; margin:0 auto; }
+.doc h1 { margin-bottom:.3rem; }
+.doc-updated { color:var(--muted); font-size:.9rem; margin:0 0 2rem; }
+.doc h2 { font-size:1.35rem; margin:2rem 0 .5rem; }
+.doc h3 { font-size:1.08rem; margin:1.4rem 0 .3rem; font-family:"Inter",sans-serif; font-weight:700; }
+.doc p, .doc li { color:var(--ink-soft); }
+.doc ul, .doc ol { padding-left:1.25rem; }
+.doc li { margin-bottom:.4rem; }
+.doc a { text-decoration:underline; }
+.doc .callout { background:var(--teal-50); border-left:4px solid var(--teal-600); padding:1rem 1.2rem; border-radius:10px; margin:1.6rem 0; color:var(--teal-900); }
+.doc .callout p:last-child { margin-bottom:0; }
+.doc-toc { display:flex; flex-wrap:wrap; gap:.6rem; margin:0 0 2rem; padding:0; list-style:none; }
+.doc-toc a { text-decoration:none; background:#fff; border:1px solid var(--line); border-radius:999px; padding:.4rem .9rem; font-size:.85rem; font-weight:600; }
+.template-note { font-size:.85rem; color:var(--muted); font-style:italic; border-top:1px solid var(--line); margin-top:2.5rem; padding-top:1.2rem; }
+
+/* 404 */
+.notfound { min-height:70vh; display:grid; place-items:center; text-align:center; }
+.notfound h1 { font-size:clamp(2.4rem,6vw,4rem); }
 
 /* Footer */
 .site-footer { background:var(--ink); color:#c8d3da; }
@@ -171,7 +195,10 @@ img { max-width:100%; }
 .footer-links a:hover { color:#fff; }
 .footer-crisis strong { color:#fff; display:block; margin-bottom:.4rem; }
 .footer-crisis p { margin:0 0 .3rem; font-size:.92rem; }
-.footer-fine { border-top:1px solid rgba(255,255,255,.1); padding:1.2rem 22px 2rem; }
+.footer-legal { display:flex; flex-wrap:wrap; gap:1.2rem; padding:1.2rem 22px 0; border-top:1px solid rgba(255,255,255,.1); }
+.footer-legal a { color:#c8d3da; font-size:.9rem; }
+.footer-legal a:hover { color:#fff; }
+.footer-fine { padding:1.2rem 22px 2rem; }
 .footer-fine p { font-size:.8rem; color:#8695a0; margin:0 0 .4rem; }
 .footer-fine .demo-note { color:#5f6f7a; font-style:italic; }
 
