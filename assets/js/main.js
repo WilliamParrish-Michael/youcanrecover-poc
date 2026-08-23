@@ -25,19 +25,8 @@
     });
   }
 
-  // Contact form — demo handler (no backend). Confirms without navigating away.
-  var form = document.getElementById('contactForm');
-  var note = document.getElementById('formNote');
-  if (form && note) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      if (!form.checkValidity()) { form.reportValidity(); return; }
-      var name = (document.getElementById('name') || {}).value || 'there';
-      note.textContent = 'Thank you, ' + name.trim().split(' ')[0] + ' — a member of our care team will reach out shortly. (Demo: no message was actually sent.)';
-      note.classList.add('ok');
-      form.reset();
-    });
-  }
+  // The contact form posts natively to FormSubmit.co (see index.html) and redirects
+  // to thanks.html on success — no JS interception needed.
 
   // Reveal-on-scroll — enhancement only; content is visible by default.
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {

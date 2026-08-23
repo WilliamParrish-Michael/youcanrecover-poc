@@ -240,7 +240,16 @@
           </ul>
         </div>
 
-        <form class="contact-form" id="contactForm" novalidate>
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/Jaywassnyla@gmail.com" method="POST" aria-label="Contact form">
+          <!-- FormSubmit config (no _autoresponse → no auto-reply) -->
+          <input type="hidden" name="_subject" value="New inquiry — YouCanRecover" />
+          <input type="hidden" name="_captcha" value="true" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://williamparrish-michael.github.io/youcanrecover-poc/thanks.html" />
+          <input type="hidden" name="form_source" value="index-contact" />
+          <!-- Honeypot spam trap (hidden from people, tempting to bots) -->
+          <input type="text" name="_honey" class="cform-honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
           <div class="field">
             <label for="name">Your name</label>
             <input id="name" name="name" type="text" autocomplete="name" required />
@@ -248,6 +257,10 @@
           <div class="field">
             <label for="phone">Phone</label>
             <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+          </div>
+          <div class="field">
+            <label for="email">Email <span class="opt">(optional)</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" />
           </div>
           <div class="field">
             <label for="help">How can we help?</label>
@@ -262,7 +275,7 @@
             <textarea id="message" name="message" rows="3"></textarea>
           </div>
           <button class="btn btn-primary btn-block" type="submit">Request a callback</button>
-          <p class="form-note" id="formNote" role="status" aria-live="polite">We'll never share your information. This connects you with our care team.</p>
+          <p class="form-note">We'll never share your information. Please don't include sensitive medical details. Submissions are relayed by FormSubmit and delivered to us by email.</p>
         </form>
       </div>
     </section>
