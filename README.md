@@ -49,6 +49,7 @@ thanks.html            # form success page (FormSubmit _next target)
 404.html               # custom not-found page
 robots.txt             # crawler directives + sitemap pointer
 sitemap.xml            # search-engine sitemap
+vercel.json            # security response headers (used only when hosted on Vercel)
 assets/css/styles.css  # design system + responsive layout
 assets/js/main.js      # mobile nav, scroll reveal (enhancement only)
 assets/img/og.jpg      # social-share / Open Graph preview image
@@ -73,6 +74,19 @@ This POC is built to be cloned and re-skinned. When adapting it, search-and-repl
 - **Entity & governing law** `[Company Name] LLC` / `[State]` — footer and legal pages.
 - **Brand look** — logo mark (inline SVG) and palette (CSS custom properties at the top of `styles.css`).
 - Regenerate `assets/img/og.jpg` (1200×630-ish) for the new brand.
+
+## Deploy to Vercel (with security headers)
+
+The site runs on any static host. Hosting on **Vercel** additionally applies the security response
+headers in `vercel.json` — HSTS, a tuned Content-Security-Policy, `X-Content-Type-Options`,
+`Referrer-Policy`, `Permissions-Policy`, and `X-Frame-Options` — which GitHub Pages cannot set.
+
+- Deploy is zero-config: it's plain static files, so Vercel just serves the folder.
+- The CSP is already tuned to this site: it allows Google Fonts (`fonts.googleapis.com` /
+  `fonts.gstatic.com`) and the FormSubmit endpoint (`form-action https://formsubmit.co`). If you add
+  analytics, a pixel, or any other third-party resource, widen the matching CSP directive or it will
+  be blocked.
+- `vercel.json` is inert on GitHub Pages, so it's safe to keep in the repo either way.
 
 ## Tech
 
