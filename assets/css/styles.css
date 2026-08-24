@@ -17,9 +17,9 @@ html { scroll-behavior:smooth; }
 body {
   margin:0; font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
   color:var(--ink); background:var(--cream); line-height:1.6;
-  -webkit-font-smoothing:antialiased;
+  -webkit-font-smoothing:antialiased; color-scheme:light;
 }
-h1,h2,h3 { font-family:"Fraunces","Georgia",serif; line-height:1.12; margin:0 0 .5em; font-weight:600; letter-spacing:-.01em; }
+h1,h2,h3 { font-family:"Fraunces","Georgia",serif; line-height:1.12; margin:0 0 .5em; font-weight:600; letter-spacing:-.01em; text-wrap:balance; }
 h1 { font-size:clamp(2.1rem,5.2vw,3.5rem); }
 h2 { font-size:clamp(1.6rem,3.6vw,2.4rem); }
 h3 { font-size:1.2rem; }
@@ -35,8 +35,11 @@ img { max-width:100%; }
 /* Buttons */
 .btn { display:inline-flex; align-items:center; gap:.5rem; font-weight:600; font-size:1rem;
   padding:.85rem 1.4rem; border-radius:999px; border:2px solid transparent; cursor:pointer;
-  transition:transform .15s ease, box-shadow .15s ease, background .15s ease; white-space:nowrap; }
+  transition:transform .15s ease, box-shadow .15s ease, background .15s ease; white-space:nowrap;
+  touch-action:manipulation; }
 .btn:hover { transform:translateY(-2px); }
+.btn:focus-visible, .nav a:focus-visible, .footer-links a:focus-visible, .footer-contact a:focus-visible {
+  outline:3px solid var(--teal-600); outline-offset:2px; border-radius:6px; }
 .btn-primary { background:var(--teal-700); color:#fff; box-shadow:0 12px 24px -12px rgba(15,118,110,.7); }
 .btn-primary:hover { background:var(--teal-900); }
 .btn-ghost { background:#fff; color:var(--teal-700); border-color:var(--line); }
@@ -215,6 +218,11 @@ img { max-width:100%; }
 @media (prefers-reduced-motion:no-preference) {
   .js .reveal { opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s ease; }
   .js .reveal.in { opacity:1; transform:none; }
+}
+@media (prefers-reduced-motion:reduce) {
+  *, *::before, *::after { animation-duration:.001ms !important; animation-iteration-count:1 !important;
+    transition-duration:.001ms !important; scroll-behavior:auto !important; }
+  .btn:hover, .care:hover { transform:none; }
 }
 
 /* Responsive */
