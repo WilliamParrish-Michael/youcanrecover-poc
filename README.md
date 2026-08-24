@@ -1,8 +1,8 @@
 # [Company Name] — Landing Page (Proof of Concept)
 
-A warm, trustworthy, mobile-first landing page concept for **[Company Name]**, a California
+A warm, trustworthy, mobile-first landing page concept for **[Company Name]**, a nationwide
 marketing &amp; consulting service that connects individuals and families with trusted detox,
-PHP, IOP, and sober-living programs.
+PHP, IOP, and sober-living programs across the United States.
 
 > **Preview build.** Testimonials and statistics are illustrative samples. Crisis resources
 > shown (988, SAMHSA 1-800-662-HELP) are real and accurate.
