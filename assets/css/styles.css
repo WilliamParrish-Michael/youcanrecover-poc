@@ -160,6 +160,12 @@ img { max-width:100%; }
 .field input:focus, .field select:focus, .field textarea:focus { outline:2px solid var(--teal-600); outline-offset:1px; border-color:var(--teal-600); }
 .section-note { font-size:.85rem; color:var(--muted); margin:1.4rem 0 0; max-width:70ch; }
 .form-note { font-size:.82rem; color:var(--muted); margin:.9rem 0 0; }
+.form-note a { color:var(--teal-700); text-decoration:underline; }
+.consent-check { display:flex; gap:.6rem; align-items:flex-start; margin:.9rem 0 0; }
+.consent-check input[type=checkbox] { width:18px; height:18px; margin-top:.12rem; flex:none; accent-color:var(--teal-700); cursor:pointer; }
+.consent-check label { font-size:.82rem; color:var(--ink-soft); line-height:1.45; }
+.consent-check a { color:var(--teal-700); text-decoration:underline; }
+.consent-check input:focus-visible { outline:2px solid var(--teal-600); outline-offset:2px; }
 .form-note.ok { color:var(--teal-700); font-weight:600; }
 /* Honeypot: hidden from people, still submitted by naive bots */
 .cform-honey { position:absolute !important; left:-9999px !important; width:1px; height:1px; opacity:0; }

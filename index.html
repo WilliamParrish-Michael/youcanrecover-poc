@@ -223,7 +223,7 @@
         <div class="section-head">
           <p class="eyebrow">Real stories</p>
           <h2>Hope you can hold onto</h2>
-          <p class="section-sub">Every person we help has a story. Here are a few, shared with permission and names changed for privacy.</p>
+          <p class="section-sub">Recovery looks different for everyone. The examples below are illustrative of the kinds of situations we help with.</p>
         </div>
 
         <div class="stories-grid">
@@ -240,7 +240,7 @@
             <figcaption><span class="avatar" data-initial="J">J</span><span><strong>Jasmine</strong><small>In recovery · Tampa, FL</small></span></figcaption>
           </figure>
         </div>
-        <p class="section-note">Individual experiences shared with permission; names and details changed for privacy. Results vary and are not typical or guaranteed — no testimonial should be taken as a promise of any particular outcome.</p>
+        <p class="section-note">Illustrative examples, not actual clients — provided to show the situations we help with. Individual experiences and outcomes vary and are not typical or guaranteed; no example should be taken as a promise of any particular result.</p>
       </div>
     </section>
 
@@ -328,9 +328,16 @@
             <label for="message">Anything you'd like us to know <span class="opt">(optional)</span></label>
             <textarea id="message" name="message" rows="3"></textarea>
           </div>
-          <p class="form-consent">By submitting, you agree to our <a href="terms.html">Terms of Use</a> and <a href="privacy.html">Privacy Policy</a>, and consent to be contacted by phone, text, or email about your request. Message and data rates may apply. Reply STOP to opt out of texts.</p>
+          <div class="consent-check">
+            <input type="checkbox" id="consent_service" name="consent_service" value="yes" required />
+            <label for="consent_service">I consent to [Company&nbsp;Name] collecting the details I share about my (or my loved one’s) substance-use situation and sharing my contact information with vetted treatment providers so they can reach me about care. I agree to the <a href="terms.html">Terms of Use</a>, <a href="privacy.html">Privacy Policy</a>, and <a href="health-privacy.html">Consumer Health Data Privacy Policy</a>.</label>
+          </div>
+          <div class="consent-check">
+            <input type="checkbox" id="consent_sms" name="consent_sms" value="yes" />
+            <label for="consent_sms"><span class="opt">(Optional)</span> I agree [Company&nbsp;Name] may call and text&nbsp;(SMS) me at the number above about my request, including by automated means. <strong>Consent is not a condition of getting help.</strong> Message frequency varies; message &amp; data rates may apply. Reply STOP to opt out, HELP for help.</label>
+          </div>
           <button class="btn btn-primary btn-block" type="submit">Request a callback</button>
-          <p class="form-note">We'll never sell your information. Please don't include sensitive medical details. This is not for emergencies — if you're in crisis, call or text 988, or call 911.</p>
+          <p class="form-note">We only use your information to help connect you with care — see our <a href="privacy.html">Privacy</a> and <a href="health-privacy.html">Consumer Health Data</a> policies. Please don’t include detailed medical records. This is not for emergencies — if you’re in crisis, call or text 988, or call 911.</p>
         </form>
       </div>
     </section>
@@ -361,6 +368,7 @@
     </div>
     <div class="wrap footer-legal">
       <a href="privacy.html">Privacy Policy</a>
+      <a href="health-privacy.html">Consumer Health Data</a>
       <a href="terms.html">Terms of Use</a>
       <a href="accessibility.html">Accessibility</a>
     </div>
